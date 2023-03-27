@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- g.font -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Parisienne&family=Rye&display=swap');
+    </style>
+
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <title>floral</title>
+  </head>
+  <body>
+    <div id="load"></div>
+    <!-- audio -->
+    <audio autoplay="true">
+      <source src="assets/audio.ogg" type="audio/mpeg">
+    </audio>
+    <script>
+      var settingAutoplay = "yes";
+      window.settingAutoplay = settingAutoplay === 'disable' ? false:true;
+    </script>
+
+    <nav class="navbar navbar-expand fixed-bottom">
+      <ul class="navbar-nav nav-justified">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-center">
+            <i class="ri-home-fill"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#mempelai" class="nav-link text-center">
+            <i class="ri-empathize-fill"></i>
+            <span>Mempelai</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#akad" class="nav-link text-center">
+            <i class="ri-calendar-fill"></i>
+            <span>Akad</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#lokasi" class="nav-link text-center">
+            <i class="ri-road-map-fill"></i>
+            <span>Lokasi</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#story" class="nav-link text-center">
+            <i class="ri-film-fill"></i>
+            <span>Story</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#gift" class="nav-link text-center">
+            <i class="ri-gift-fill"></i>
+            <span>Gift</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!-- hero -->
+    <section id="hero">
+      <div class="hero-container"  data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+        <img src="assets/img/flow.png" alt="img" />
+        <h5>We Are Getting Married</h5>
+        <h1>Fulan & Fulanah</h1>
+        <!-- cd time -->
+      <section id="cdtime" class="cdtime" data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="2500">
+        <div class="container">
+          <h5>- Save The Date -</h5>
+          <div id="time" class="time-section d-flex justify-content-center">
+            <div class="dd">
+              <span>Days</span>
+              <p id="days">00</p>
+            </div>
+            <div class="dd">
+              <span>Hours</span>
+              <p id="hours">00</p>
+            </div>
+            <div class="dd">
+              <span>Minutes</span>
+              <p id="minutes">00</p>
+            </div>
+            <div class="dd">
+              <span>Seconds</span>
+              <p id="seconds">00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- js cdtime -->
+      <script>
+        var countDownDate = new Date("april 24, 2023 07:00:00").getTime();
+        var x = setInterval(function () {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("days").innerHTML = days;
+          document.getElementById("hours").innerHTML = hours;
+          document.getElementById("minutes").innerHTML = minutes;
+          document.getElementById("seconds").innerHTML = seconds;
+
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("days").innerHTML = 00;
+            document.getElementById("hours").innerHTML = 00;
+            document.getElementById("minutes").innerHTML = 00;
+            document.getElementById("seconds").innerHTML = 00;
+          }
+        }, 1000);
+      </script>
+      <!-- end cdtime -->
+      <img src="assets/img/flow1.png" alt="img" />
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>SAVE THE DATE</h2>
+            <p>Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami :</p>
+          </div>
+        </div>
+      </section>
+      <!-- end about -->
+
+      <!-- mempelai -->
+      <section id="mempelai" class="team">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Mempelai</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="member">
+                <div class="pic">
+                  <img src="assets/img/26504101_6603346291907.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Fulanah</h4>
+                  <p>putri dari</p>
+                  <span>Bp. abu fulanah & Ibu. ummu fulanah</span>
+                  <p>Indonesia</p>
+                  <div class="social">
+                    <a href="#none"><i class="ri-instagram-fill"></i></a>
+                    <a href="#none"><i class="ri-whatsapp-fill"></i></a>
+                    <a href="#none"><i class="ri-telegram-fill"></i></a>
+                    <a href="#none"><i class="ri-facebook-circle-fill"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <div class="pic">
+                  <img src="assets/img/26504101_6603346291907.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Fulan</h4>
+                  <p>putra dari</p>
+                  <span>Bp. abu fulan & Ibu. ummu fulan</span>
+                  <p>Indonesia</p>
+                  <div class="social">
+                    <a href="#none"><i class="ri-instagram-fill"></i></a>
+                    <a href="#none"><i class="ri-whatsapp-fill"></i></a>
+                    <a href="#none"><i class="ri-telegram-fill"></i></a>
+                    <a href="#none"><i class="ri-facebook-circle-fill"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end mempelai -->
+
+      <!-- akad -->
+      <section id="akad" class="akad">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="section-title" data-aos="fade-up">
+                <h2>Akad & Resepsi</i></h2>
+              </div>
+            </div>
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="tanggal">
+                <img src="assets/img/flow2.png" alt="img">
+                <p>Tanggal</p>
+                <h4><a href="#none">Hh</a></h4>
+                <p>Bbbbb Tttt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end akad -->
+
+      <!-- lokasi -->
+      <section id="lokasi" class="lokasi">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2><i class="bi bi-geo-alt-fill"></i> Lokasi <i class="bi bi-geo-alt-fill"></i></h2>
+          </div>
+          <div class="map" data-aos="zoom-in" data-aos-delay="200">
+            <p class="text-center">Gandurejo, Sewurejo, Mojogedang, Karanganyar, Jawa Tengah</p>
+            <div class="maps">
+              <iframe
+                class="mb mb-lg"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8173077452157!2d111.0313655152819!3d-7.594853077159865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a1f42bb955d03%3A0x71c38e6319f6857b!2sgriya%20pak%20hasan!5e0!3m2!1sid!2sid!4v1670769340528!5m2!1sid!2sid"
+                width="100%"
+                height="350"
+                style="border: 10px solid #065789"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end lokasi -->
+
+      <!-- story -->
+      <section id="story" class="testimonials">
+        <div class="container" data-aos="zoom-in">
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/26504101_6603346291907.jpg" class="testimonial-img rounded-circle" alt="">
+                  <h3>Pertemuan</h3>
+                  <h4>00 Xxxxx 0000</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eveniet optio, expedita illum voluptates laborum deserunt. Nam soluta laudantium delectus, ducimus ab facilis aliquam officiis, iusto beatae tempora tenetur excepturi?
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/26504101_6603346291907.jpg" class="testimonial-img rounded-circle" alt="">
+                  <h3>Tunangan</h3>
+                  <h4>00 Xxxxx 0000</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eveniet optio, expedita illum voluptates laborum deserunt. Nam soluta laudantium delectus, ducimus ab facilis aliquam officiis, iusto beatae tempora tenetur excepturi?
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/26504101_6603346291907.jpg" class="testimonial-img rounded-circle" alt="">
+                  <h3>Lamaran</h3>
+                  <h4>00 Xxxxx 0000</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eveniet optio, expedita illum voluptates laborum deserunt. Nam soluta laudantium delectus, ducimus ab facilis aliquam officiis, iusto beatae tempora tenetur excepturi?
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/26504101_6603346291907.jpg" class="testimonial-img rounded-circle" alt="">
+                  <h3>Menikah</h3>
+                  <h4>00 Xxxxx 0000</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eveniet optio, expedita illum voluptates laborum deserunt. Nam soluta laudantium delectus, ducimus ab facilis aliquam officiis, iusto beatae tempora tenetur excepturi?
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+      </section>
+      <!-- end story -->
+
+      <!-- gift -->
+      <section id="gift" class="gift">
+        <div class="container" data-aos="zoom-in">
+          <div class="section-title">
+            <h2>Gift</h2>
+          </div>
+          <div class="row">
+              <div class="modal-content">
+                <h4>DANA<input type="text" value="0895 3579 08449" id="myInput"></h4>
+                <button onclick="myFunction()">Salin</button>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- end gift -->
+
+      
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="social-links">
+          <a href="https://www.instagram.com/zever_s/" class="instagram"><i class="ri-instagram-fill"></i></a>
+          <a href="https://wa.me/qr/5NXSUY7TJ754C1"><i class="ri-whatsapp-fill"></i></a>
+        </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>invitUS</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function myFunction() {
+        var copyText = document.getElementById("myInput");
+      
+        copyText.setSelectionRange(0, 99999);
+      
+        navigator.clipboard.writeText(copyText.value);
+      }
+      </script>
+    <script>
+      var loader = document.getElementById("load");
+
+      window.addEventListener("load", function(){
+        loader.style.display = "none";
+      })
+    </script>
+  </body>
+</html>
